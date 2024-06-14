@@ -30,16 +30,16 @@ if Morphology == 'A':
     TA = input("Please enter morphology of Transport Anomaly to be used. B for Braided, M for Meandering:")
 
     if TA == "M":
-        ta = pd.read_csv("Bedform_Trinity_Meandering.csv")
+        ta = pd.read_csv("Transport_Anomaly_Meandering_Trinity.csv")
 
     if TA == "B":
-        ta = pd.read_csv("Bedform_Northloup_Braided.csv")
+        ta = pd.read_csv("Transport_Anomaly_Braided_NorthLoup.csv")
 
 elif Morphology == 'B':
-    ta = pd.read_csv("Bedform_Northloup_Braided.csv")
+    ta = pd.read_csv("Transport_Anomaly_Braided_NorthLoup.csv")
 
 elif Morphology == 'M':
-    ta = pd.read_csv("Bedform_Trinity_Meandering.csv")
+    ta = pd.read_csv("Transport_Anomaly_Meandering_Trinity.csv")
 
 elif Morphology == '0':
     ta = pd.read_csv("Bedform_0_Subsample_Field_Data.csv")
