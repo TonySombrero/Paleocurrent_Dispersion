@@ -1,14 +1,11 @@
 # Modern Dispersion Calculator TAMC
 # Anthony Semeraro
-# 17 Jan 2022
+# 14 June 2024
 
 # This script reads in .csv files with a modern rivers name and n polar current measurements. It also read in a file of Transport"
 # Anomaly data collected and processed by Dr. Benjamin Cardenas. Make sure to select the river morphology that you are processing."
 # This script is only to be used for modern river current measurements, as the TA is automatically added which paleocurrent data does"
 # does not need added."
-
-#! Does not work on multiple columns in a single sheet. Returns NAN values for disperison for all except longest.
-#* TODO: Fix Bug
 
 # TA = Transport Anomaly"
 # MC = Monte Carlo
@@ -22,7 +19,7 @@ import math
 #%% Loading in Data
 
 # River Data Read In
-riverdata = pd.read_csv("Cedar_Mtn_Final.csv")
+riverdata = pd.read_csv(".csv") #! Do not forget to add an input file
 
 # Assigning Transport Anomaly datasets for the modern data morphologies
 Morphology = input("Please enter River Morphology. A for Anastomosing, B for Braided, M for Meandering:")
@@ -116,7 +113,7 @@ print(dispersion_file)
 df = pd.DataFrame(dic)
 
 # Creating the final CSV document. Need to change name or else it overrides it each run
-df.to_csv("Cedar_Mountain_Field.csv")
+df.to_csv(".csv") #! Do not forget to rename the output file
 
 print("Program has succesfully completed")
 

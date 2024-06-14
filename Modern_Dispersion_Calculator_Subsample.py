@@ -1,6 +1,6 @@
 # Modern Dispersion Calculator TAMC Subsample
 # Anthony Semeraro
-# 31 Jan 2022
+# 14 June 2024
 
 " This script reads in .csv files with a modern rivers name and n polar current measurements. It also read in a file of Transport"
 " Anomaly data collected and processed by Dr. Benjamin Cardenas. Make sure to select the river morphology that you are processing."
@@ -21,7 +21,7 @@ import math
 #%% Loading in Data
 
 # Modern River Dataset
-riverdata = pd.read_csv("Cedar_Mtn_Final.csv")
+riverdata = pd.read_csv(".csv") #! Do not forget to add an input file
 
 # Assigning Transport Anomaly datasets for the modern data morphologies
 Morphology = input("Please enter River Morphology. A for Anastomosing, B for Braided, M for Meandering:")
@@ -145,6 +145,6 @@ for column in columns:
 # df = pd.DataFrame(dic)
 
 # Creating the final CSV document. Need to change name or else it overrides it each run
-Dispersion_DF.to_csv("Cedar_Mtn_Final_Subsample.csv")
+Dispersion_DF.to_csv(".csv") #! Do not forget to add an export file name
 
 print("Program has succesfully completed")

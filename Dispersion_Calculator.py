@@ -68,7 +68,7 @@ dic = {"Dispersion": dispersion_name, "River": dispersion_file}
 df = pd.DataFrame(dic)
 
 # Creating the final CSV document
-df.to_csv(".csv")
+df.to_csv(".csv") #! Do not forget to add a name for the output file
 
 print("Program has succesfully completed")
 # %%

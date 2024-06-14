@@ -1,7 +1,7 @@
 # Dispersion Monte Carlo
 
 # Anthony Semeraro
-# 3 Feb 2022
+# 14 June 2024
 
 # This script reads in modern current direction measurements, adds the transport anomaly, and then returns a .csv file
 # with each dispersion value calculated for each run of the Monte Carlo simulation, for each subsampled dataset. The resulting
@@ -18,7 +18,7 @@ import math
 #%% Loading in Data
 
 # River Dataset
-riverdata = pd.read_csv("Napo.csv")
+riverdata = pd.read_csv(".csv") #! Do not forget to add an input file
 
 # Assigning Transport Anomaly datasets for the modern data morphologies
 Morphology = input("Please enter River Morphology. A for Anastomosing, B for Braided, M for Meandering:")
@@ -128,6 +128,6 @@ for column in columns:
     i = i + 1
 
 # Creating the final CSV document. Need to change name or else it overrides it each run
-Dispersion_DF.to_csv("Napo_Confidence.csv")
+Dispersion_DF.to_csv(".csv") #! Do not forget to add a name for the export file
 
 print("Program has succesfully completed")
