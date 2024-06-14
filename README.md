@@ -4,7 +4,7 @@
 
 The Dispersion Calculator is designed to input a .csv file of raw directional measurements and calculate the dispersion value for those measurements. This script is only meant for raw paleocurrent directions (or any other directional measurements one would like to know). To first check for modality, a rose diagram plotting tool should be used. 
 
-The other scripts are the ones that I used for my master thesis to calculate dispersion of modern river systems. Those along with the included Thesis_Data.xlsx file are included for repeatablility and transparency for my research. 
+The other scripts are the ones that I used for my master thesis to calculate dispersion of modern river systems. Those along with the included Thesis_Data.xlsx file are included for repeatablility and transparency for my research. To use these, first convert the river dataset from the Thesis_Data file into a single .csv file, then run it through the script of your choice by renaming the read-in and export files. 
 
 ### Abstract
 
